@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* CSS Variable */
+
+:root {
+  --primary-color: #ffa500;
+  --white: #fff;
+}
+
+/* Utilities */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Nav bar */
+nav {
+  padding: 20px;
+  box-shadow: 0 0 10px #00000080;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: red;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links ul li {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/* Showcase */
+#showcase {
+  padding: 50px 100px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  flex: 0 0 50%;
+}
+
+
+
+.info h4 {
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.info h2 {
+  font-size:2.5rem;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  margin: 20px 0;
+}
+
+.btn {
+  border-radius: 20px;
+  padding: 10px 20px;
+  background: var(--white);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-pry {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.info p {
+  margin-bottom: 20px;
+}
+
+.image {
+  flex: 0 0 50%;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 700px) {
+  #showcase {
+    padding: 50px 20px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .image {
+    display: none;
+  }
+}
